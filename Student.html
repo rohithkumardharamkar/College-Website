@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: rgb(189, 189, 189);
+        }
+        .con
+        {
+            width: 800px;
+            height: 30vh;
+            background-color: rgb(195, 224, 223);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: auto;
+        }
+        .t1
+        {
+        }
+        h1
+        {
+            text-align: center;
+        }
+        input
+        {
+            width: 200px;
+            height:3vh;
+            padding: 10px;
+        }
+        button
+        {
+            width: 80px;
+            height:40px;
+            background-color:rgb(213, 198, 141);
+            border: none;
+            border-radius: 5px;
+          
+        }
+        td
+        {
+            text-align: center;
+        }
+        .q1
+        {
+            width: 400px;
+            display: flex;
+           
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>RESULTS</h1>
+
+    <div class="con">
+        <div class="q1">
+            <input type="text" placeholder="Enter Roll Number">
+        <button onclick=fun()>Submit</button>
+        </div>
+        <div class="t1">
+            <table border="1" >
+                <tr><th>Name</th>
+                   <th>Roll Number</th>
+                   <th>Maths</th>
+                <th>Science</th>
+                <th>English</th>
+                <th>Result</th></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+               </table>
+        </div>
+       
+
+    </div>
+   
+   
+    
+</body>
+<script>
+    let a=document.getElementsByTagName("input")[0]
+    let a1=document.getElementsByTagName("td")[0];
+    let a2=document.getElementsByTagName("td")[1];
+    let a3=document.getElementsByTagName("td")[2];
+    let a4=document.getElementsByTagName("td")[3];
+    let a5=document.getElementsByTagName("td")[4];
+    let a6=document.getElementsByTagName("td")[5];
+   
+   
+    function fun()
+    {
+        let arr=[{"roll":401,"name":"Teja","result":"PASS","m":78,"s":89,"c":88},{"roll":402,"name":"RAMU","result":"PASS","m":98,"s":80,"c":98},
+    {"roll":403,"name":"Khaja","result":"FAIL","m":18,"s":29,"c":28},{"roll":404,"name":"Rohan","result":"PASS","m":88,"s":78,"c":68},
+    {"roll":405,"name":"ALI","result":"FAIL","m":10,"s":19,"c":18},{"roll":406,"name":"JOHN","result":"FAIL","m":12,"s":81,"c":78},{"roll":407,"name":"RAGHU","result":"PASS","m":98,"s":82,"c":78}]
+    arr.map((item)=>
+    {
+       if(item.roll==a.value)
+       {
+        a1.innerText=item.name;
+        a2.innerHTML=item.roll;
+        a3.innerText=item.m;
+        a4.innerHTML=item.s;
+        a5.innerHTML=item.c;
+        a6.innerHTML=item.result;
+ 
+       }
+    })
+        console.log("hi",a.value);
+    }
+</script>
+</html>

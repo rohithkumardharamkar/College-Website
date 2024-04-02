@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Login</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        .login {
+            display: flex;
+        }
+        a{
+            color: white;
+        }
+        a:hover{
+            color: yellow;
+        }
+
+        .logincontent {
+            width: 50%;
+            background-color: rgb(207, 227, 230);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loginframe {
+            height: 100vh;
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            border: 50px solid rgb(207, 227, 230);
+            overflow: hidden;
+            text-align: center;
+            background: url(https://blogassets.leverageedu.com/blog/wp-content/uploads/2019/12/23174144/assistant-professor.png);
+
+        }
+
+        .l1 {
+            position: relative;
+            top: 433px;
+            left: 70px;
+        }
+
+        form {
+            width: 400px;
+            background-color: rgb(100, 200, 195);
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 5px;
+        }
+
+        form:hover {
+            box-shadow: 0px 0px 10px 10px rgb(0, 234, 255);
+        }
+
+        h2 {
+            font-size: 20px;
+        }    
+       input[type=text]
+        {
+            border: none;
+            border-radius: 7px;
+            padding: 15px;
+            width: 250px;
+
+
+        }
+        input[type=password]
+        {
+
+            border: none;
+            border-radius: 7px;
+            padding: 15px;
+            width: 250px;
+        
+        }
+        input[type=submit]
+        {
+            width: 100px;
+            height: 5vh;
+            border-radius: 5px;
+            border: none;
+        }
+       
+        .fcon{
+            border: 5px double red;
+            margin: auto;
+            width: 350px;
+            height: 50vh;
+            display: flex;
+            background-color: aqua;
+            flex-direction:column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .fcon
+        {
+            position: absolute;
+            top: 50px;
+            left: 600px;
+            display: none;
+        }
+        .fcon #a
+        {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+        }
+        .fcon submit 
+        {
+            width: 150px;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="login">
+        <div class="logincontent">
+            <form action="Faculty.html">
+                <h2>Faculty Login</h2>
+                <div class="email"><i class="fa-regular fa-envelope"></i><input type="text"
+                        placeholder="Enter email or userid" required></div>
+                <div class="password"><i class="fa-solid fa-lock"></i><input type="password"
+                        placeholder="Enter Password" required></div>
+                <div class="forgotpassword" id="op" onclick="ope()">Forgot Password?</div>
+                <input type="submit" value="Login Now">
+                <div>Don't have an account? <a href="signup.html">Signup</a></div>
+            </form>
+        </div>
+        <div class="loginframe">
+        </div>
+    </div>
+    <div class="fcon">
+        <div id="a"><h3>Change Password</h3>
+            <span class="close" onclick="fun()">&times;</span></div>
+        <div><input type="text" placeholder="email or userid" required>
+            <br><button>Send OTP</button></div>
+        <div>        <input type="text" placeholder="Enter OTP">
+            <br><button>Submit OTP</button></div>
+
+        <div> <input type="password" placeholder="password" required></div>
+        <div><input type="password" placeholder="confirm password "required></div>
+        <div><input type="submit" value="Change Password"></div>        
+    </div>
+    <script>
+        let win=document.getElementsByClassName("fcon")[0];
+        let q=document.getElementById("op");
+        let s=document.getElementsByClassName("close")[0];
+        function fun()
+        {
+            console.log("kjkjkj");
+            win.style.display="none";
+        }
+        function ope()
+        {
+            win.style.display="flex";
+            console.log("opened");
+     
+        }
+    </script>
+
+
+</body>
+
+</html>
