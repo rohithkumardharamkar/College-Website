@@ -1,0 +1,618 @@
+* {
+    gap: 0px;
+    outline: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.nav1 {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 5vh;
+}
+
+.a11 {
+    align-items: center;
+    text-decoration: none;
+    width: 20%;
+    justify-content: space-around;
+    display: flex;
+}
+
+.a11 a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.a11 a:hover {
+    color: yellow;
+}
+
+.a2 a:hover {
+    color: yellow;
+}
+
+.a2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.a2 {
+    align-items: center;
+    width: 45%;
+    justify-content: space-around;
+    display: flex;
+}
+
+
+nav {
+    font-size: 18px;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background-color: rgb(78, 167, 222);
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+.navcontent {
+    font-size: 18px;
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img {
+    background-color: white;
+    height: 8vh;
+}
+
+.abt,
+.dept,
+.placements,
+.contact {
+    position: relative;
+}
+
+.subabt,
+.subdept,
+.plments,
+.contactdetails {
+    position: absolute;
+    background-color: rgb(78, 167, 222);
+    border-radius: 3px;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10px;
+    display: none;
+    width: 200px;
+}
+
+.subabt>div,
+.subdept>div,
+.plments>div,
+.contactdetails>div {
+    padding: 9px;
+    width: 200px;
+    border-bottom: 1px solid white;
+}
+
+.contactdetails {
+    left: -15%;
+
+
+}
+
+.subabt>div:hover,
+.subdept>div:hover,
+.plments>div:hover,
+.contactdetails>div:hover {
+
+    background-color: rgb(211, 46, 46);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.navcontent>div {
+    width: 50%;
+    text-align: center;
+}
+
+.navcontent>div:hover {
+    color: yellow;
+}
+
+.abt:hover .subabt {
+    display: flex;
+}
+
+.dept:hover .subdept {
+    display: flex;
+}
+
+.placements:hover .plments {
+    display: flex;
+}
+
+.contact:hover .contactdetails {
+    display: flex;
+}
+
+.navcontent a {
+    color: white;
+    text-decoration: none;
+}
+
+.navcontent a:hover {
+    color: yellow;
+}
+
+.collegephoto img {
+    height: 85vh;
+    width: 100%;
+}
+
+.support {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+
+}
+
+.support div {
+    padding-bottom: 20px;
+}
+
+.support button {
+    border-radius: 15px;
+    font-size: 15px;
+    height: 30px;
+    width: 120px;
+    color: white;
+
+}
+
+.support .fa-solid:hover,
+.fa-brands:hover {
+    color: yellow;
+
+}
+
+.en {
+
+    background-color: rgb(218, 95, 95);
+}
+
+.ws {
+
+    background-color: rgb(17, 157, 17);
+}
+
+.coursesoffered {
+   
+
+    width: 100%;
+    height: 50vh;
+    background: url(https://img.freepik.com/free-vector/abstract-watercolor-pastel-background_87374-139.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703462400&semt=ais);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center center;
+
+}
+
+.co {
+    height: 40vh;
+    width: 65%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-evenly;
+
+}
+
+.coursesoffered h3 {
+    text-align: center;
+
+}
+
+.c1 {
+    border: 2px solid black;
+    width: 300px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    border-radius: 8px;
+}
+
+
+.co1 i
+{
+    padding: 7px;
+}
+.co2 i
+{
+    padding: 7px;
+}
+
+.rp button:hover {
+    border: none;
+    color: rgb(255, 0, 0);
+    box-shadow: 0px 0px 15px 15px white;
+
+}
+.coursesoffered
+{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.co
+{
+
+    height:50vh;
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  
+  
+}
+#cof
+{
+    text-align: center;
+    margin-top: 20px;
+}
+.co1,.co2
+{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.co1 div  {
+    border: 2px solid black;
+    width: 500px;
+    height: 7vh;
+    border-radius: 5px;
+
+  
+}
+.co1 div{
+   display: flex;
+   flex-direction:row;
+  
+   align-items: center;
+   padding: 0px 40px;
+
+  
+}
+.co2 div{
+   display: flex;
+   flex-direction:row;
+  
+   align-items: center;
+   padding: 0px 40px;
+
+  
+}
+.co2 div  {
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 500px;
+    height: 7vh;
+    
+  
+}
+
+
+
+
+.bgcolor {
+    background: url(https://img.freepik.com/free-vector/abstract-watercolor-pastel-background_87374-139.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703462400&semt=ais);
+
+}
+
+.clubs {
+ 
+    height: 65vh;
+}
+
+.clubscontent {
+    display: flex;
+    justify-content: space-around;
+}
+.c1
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+}
+.img1:hover
+{
+    width: 250px;
+    height: 220px;
+}
+.video div video
+{
+    padding-top: 25px;
+    
+   
+}
+
+.f1 {
+    background-color: rgb(78, 167, 222);
+    width: 100%;
+    height: 60vh;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
+
+}
+
+.collegelinks {
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+
+.collegelinks div div:hover {
+    color: yellow;
+}
+
+.link1,
+.link2 {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.media {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 20vh;
+}
+
+.map iframe {
+    height: 35vh;
+    width: 220px;
+    height: 200px;
+}
+
+.fa-angles-left
+{
+    position: absolute;
+    top: 60%;
+    left: 50px;
+    font-size: 50px;
+    color: white;
+   
+}
+.fa-angles-right
+{
+    position: absolute;
+    top: 60%;
+    right: 50px;
+    font-size: 50px;
+    color: white;
+}
+.dotcon
+{
+    left: 40%;
+    top: 90%;
+    position: absolute;
+    width: 600px;
+    color: rgb(251, 251, 251);
+    letter-spacing: 10px;
+    font-size: 25px;
+}
+.dotcon i:hover
+{
+    color: red;
+}
+.acarcon
+{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.acarcon img
+{
+    border: 2px solid black;
+    width: 200px;
+    height: 120px;
+    padding: 5px;
+}
+.btnsacar
+{
+    margin-left: 84%;
+    display: flex;
+    width: 130px;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.btnsacar i
+{
+    font-size: 30px;
+}
+
+#acarhead
+{
+    text-align: center;
+}
+.testimonial .t
+{
+    height: 50vh;
+    border: 2px solid black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+.testimonial .pic img
+{
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+.fa-arrow-left-long, .fa-arrow-right-long
+{
+    font-size: 50px;
+}
+
+.testimonial 
+{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 60vh;
+    
+}
+.fa-arrow-left-long
+{
+    position: relative;
+    top: 140px;
+    left: 300px;
+}
+.fa-arrow-right-long
+{
+    position: relative;
+    top: 140px;
+    right: 300px;
+    
+}
+.stdtest h1{
+
+  text-align: center;
+}
+.t .desc p
+{
+text-align: center;
+line-height: 25px;
+
+
+}
+#slife
+{
+margin: 20px;
+text-align: center;
+}
+
+.map iframe
+{
+padding-top: 25px;
+}
+.popcon{
+    width: 400px;
+    border-style: double;
+    border: 5px double rgb(177, 106, 106);
+    margin: auto;
+    margin-top: 100px;
+    
+   
+}
+.popcon form
+{
+    overflow:hidden;
+    
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.popcon
+{
+    background-color: white;
+    top: 10px;
+    left: 600px;
+    position: absolute;
+}
+#ppc
+{
+    display: none;
+}
+.close 
+{
+    font-size: 30px;
+}
+#cb
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.rp .pp
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+   height: 20vh;
+}
+.rp .pp a
+{
+    text-decoration: none;
+}
+.rp {
+    width: 100%;
+   
+    background: url(https://img.freepik.com/free-vector/abstract-watercolor-pastel-background_87374-139.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703462400&semt=ais);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center center;
+
+
+    height: 20vh;
+    background-repeat: no-repeat;
+}
+
+.rp button {
+    top: 50px;
+    left: 650px;
+
+    font-size: 18px;
+    height: 5vh;
+    width: 250px;
+    background: transparent;
+}
